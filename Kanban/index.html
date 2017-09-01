@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KanBan</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>	
+</head>
+<body>
+  <div class="top clearfix">
+    <div class="top_do_it">
+      <p>Do It</p>
+    </div>
+    <div class="separator_1"></div>
+    <div class="top_in_progress">
+      <p>In-progress</p>
+    </div>
+    <div class="separator_3"></div>
+    <div class="top_done">
+      <p>Done</p>
+    </div>
+    <div class="separator_1"></div>
+    <div class="top_aborted">
+      <p>Aborted</p>
+    </div>
+  </div>
+  <div id="do_it"></div>
+  <div class="separator_2"></div>
+  <div id="in_progress"></div>
+  <div class="separator_2"></div>
+  <div id="done"></div>
+  <div class="separator_2"></div>
+  <div id="aborted"></div>
+
+  <button id="button">New Task</button> 
+
+  <form id="form" name="form_for_task">
+    <p>Введите описание задания :</p>
+	  <textarea id="task" name="task_text"  autofocus></textarea>
+    <p>Приоритет :</p>
+    <div id="div_priority">
+  	  <label><input type="radio" name="task_priority" value="hight">Hight</label><br>
+      <label><input type="radio" name="task_priority" checked value="normal">Normal</label><br>
+      <label><input type="radio" name="task_priority" value="low">Low</label><br>
+      <button name="button_form">Create Task</button>
+    </div>
+  </form>
+</body>
+</html>
